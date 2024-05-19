@@ -25,10 +25,7 @@ const Navbar = () => {
 
     }, []);
 
-    const [menu, setMenu] = useState(false);
-    // const token = localStorage.getItem("token")
-    // console.log(token);
-
+  
     // get user from localStorage 
     const user = (localStorage.getItem('users'));
 
