@@ -10,16 +10,13 @@ import { store } from "@/redux/store";
 import Footer from "./components/Footer/Footer";
 
 
-
 const inter = Inter({ subsets: ["latin"] });
-
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <title>Title</title>
+       <head>
+        <title>Nextjs ecommerce</title>
         <meta name='description' content='Description' />
       </head>
       <body className={inter.className}>
@@ -28,11 +25,12 @@ export default function RootLayout({ children }) {
         <Navbar />
           {children}
           <Footer/>
-        </Provider>
+    
 
         <ToastContainer position='top-right' theme="colored"
           autoClose={2000} bodyClassName="toastBody"
         />
+            </Provider>
       </body>
     </html>
   );
