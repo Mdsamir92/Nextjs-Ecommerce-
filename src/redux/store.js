@@ -1,4 +1,4 @@
-
+'use client'
 import { createStore } from "redux";
 import rootred from "../redux/Reducers/main";
 
