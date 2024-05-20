@@ -42,16 +42,14 @@ function  page() {
         }
 
 
-        try {
+          try {
             setLoading(true)
 
-            const res = await axios.post('http://localhost:3000/api/users/signup', user)
+            const res = await axios.post('https://login-register-form-go9w.onrender.com/register', user)
             console.log("signup success", res.data)
             toast.success("Register successfully😍")
             router.push('/login');
-
         }
-
 
         catch (err) {
          console.log(err);
