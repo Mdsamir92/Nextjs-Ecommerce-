@@ -42,7 +42,10 @@ function page() {
       setLoading(true);
       const res = await axios.post('http://localhost:3000/api/users/login', user);
       console.log("login success", res.data)
-      JSON.stringify(localStorage.setItem('users', user.email));
+          if(typeof window !== 'undefined'){
+        JSON.stringify(localStorage.setItem('users', user.email));
+      }
+  
       toast.success("Login successfully😍")
       router.push('/');
     }
