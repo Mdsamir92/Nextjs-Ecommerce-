@@ -1,3 +1,4 @@
+'use client'
 import {combineReducers} from "redux";
 import { cartreducer } from "./reducer";
 
