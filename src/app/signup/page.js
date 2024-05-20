@@ -87,7 +87,7 @@ function  page() {
 
          <br/>
          
-        <Link href={"/login"} className="text-blue-500 hover:text-blue-800 text-sm">Already account / login</Link>
+        <Link href={"/login"} className="text-blue-500 hover:text-blue-800 text-sm">Already account /login here</Link>
       </form>
     </div>
   </div>
