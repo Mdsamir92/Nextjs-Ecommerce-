@@ -4,6 +4,7 @@ import React from 'react'
 import {useEffect,useState} from 'react'
 import axios from "axios";
 import { toast } from 'react-toastify';
+import Navbar from '@/app/components/Navbar/Navbar';
 import { useDispatch, useSelector } from "react-redux";
 import { ADD } from '@/redux/Actions/action';
 
@@ -40,7 +41,7 @@ function page(props) {
 
   return (
     <div>
-     
+        <Navbar/>
    <section className="py-5 lg:py-16 font-poppins dark:bg-gray-800">
     
                 <div className="max-w-6xl px-4 mx-auto">
