@@ -14,7 +14,6 @@ export const DLT = (id) => {
 }
 
 // remove individual iteam
-
 export const REMOVE = (iteam) => {
     return {
         type: "RMV_ONE",
@@ -22,16 +21,3 @@ export const REMOVE = (iteam) => {
     }
 }
 
-export const incNumber = (num) => {
-    return {
-        type: "INCREMENT",
-        payload: num  //receive argument(5)
-
-    }
-}
-
-export const decNumber = () => {
-    return {
-        type: "DECREMENT"
-    }
-}
