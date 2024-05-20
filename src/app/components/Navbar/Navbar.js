@@ -33,14 +33,16 @@ const Navbar = () => {
     const cartItems = useSelector((state) => state.cartreducer.carts);
 
     const router = useRouter();
-
+    
     // logout function 
     const logout = async () => {
-      
+        const res = await axios.post("http://localhost:3000/api/users/logout")
+        if (res.data || typeof window !== 'undefined') {
             localStorage.clear('users');
             toast.success("logout successfully!")
             router.push("/login")
             
+        }
     }
 
     const handleClose = () => {
