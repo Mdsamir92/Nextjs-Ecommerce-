@@ -24,30 +24,6 @@ export const cartreducer = (state = INIT_STATE, action) => {
             }
         }
 
-// 
-//  incrementQuantity: (state, action) => {
-//     state = state.map(item => {
-//         if (item.id === action.payload) {
-//             item.quantity++;
-//         }
-//         return item;
-//     });
-// }
-//  decrementQuantity: (state, action) => {
-//     state = state.map(item => {
-//         if (item.quantity !== 1) {
-//             if (item.id === action.payload) {
-//                 item.quantity--;
-//             }
-//         }
-//         return item;
-
-//     })
-// }
-
-
-// 
-
         case "RMV_CART":
             const data = state.carts.filter((el)=>el.id !== action.payload); 
             // console.log(data);
