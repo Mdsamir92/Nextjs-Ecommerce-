@@ -46,10 +46,6 @@ const page = (props) => {
         localStorage.setItem('cart', JSON.stringify(cartItems));
     }, [cartItems]);
 
-
-    // user
-    const user = (localStorage.getItem('users'))
-
    
     return (
 
