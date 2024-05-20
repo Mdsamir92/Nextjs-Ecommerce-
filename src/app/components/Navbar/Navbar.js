@@ -36,12 +36,11 @@ const Navbar = () => {
 
     // logout function 
     const logout = async () => {
-        const res = await axios.post("http://localhost:3000/api/users/logout",)
-        if (res.data) {
+      
             localStorage.clear('users');
             toast.success("logout successfully!")
             router.push("/login")
-        }
+            
     }
 
     const handleClose = () => {
