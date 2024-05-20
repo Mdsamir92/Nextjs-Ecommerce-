@@ -8,7 +8,7 @@ import { toast } from "react-toastify"
 
 
 
-function SignupPage() {
+function  page() {
 
     const router = useRouter();
 
@@ -98,4 +98,4 @@ function SignupPage() {
      
 }
 
-export default SignupPage
+export default  page
