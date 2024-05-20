@@ -38,16 +38,14 @@ function page() {
         }
 
 
-        try {
-            setLoading(true)
-
-            const res = await axios.post('http://localhost:3000/api/users/login', user)
-            console.log("login success", res.data)
-            JSON.stringify(localStorage.setItem('users', user.email));
-            toast.success("Login successfully😍")
-            router.push('/');
-        }
-
+      try {
+      setLoading(true);
+      const res = await axios.post('https://login-register-form-go9w.onrender.com/login', user);
+      console.log("login success", res.data)
+      JSON.stringify(localStorage.setItem('users', user.email));
+      toast.success("Login successfully😍")
+      router.push('/');
+    }
         catch (err) {
          console.log(err);
             toast.error("check email or password")
