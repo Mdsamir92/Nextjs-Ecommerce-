@@ -4,7 +4,7 @@ import Product from './components/allproducts/Product'
 import Navbar from './components/Navbar/Navbar'
 import Footer from "./components/Footer/Footer";
 
-function Home() {
+function page() {
 
 
   return (
@@ -15,5 +15,5 @@ function Home() {
     </div>
   )
 }
-export default Home
+export default page
 
