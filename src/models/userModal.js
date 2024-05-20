@@ -22,15 +22,12 @@ const userSchema = new Schema(
         default: false,
     },
     verifyToken:String,
-    verifyTokenExpiry:Date,
-    forgotPasswordToken:String,
-    forgotPasswordExpiry:Date,
-   
+    verifyTokenExpiry:Date, 
     
   },
   { timestamps: true }
 );
 
 const User = mongoose.models.users || mongoose.model("users", userSchema);
-// if already collection name users in database Than its ok otherwise  || its create  new users collection 
+
 export default User;
