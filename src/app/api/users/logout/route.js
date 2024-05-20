@@ -1,23 +1,23 @@
-import { connect } from "@/DbConn/dbConn";
-import { NextResponse } from 'next/server'
+// import { connect } from "@/DbConn/dbConn";
+// import { NextResponse } from 'next/server'
 
-connect();
+// connect();
 
 
-export async function POST(){
-    try{
+// export async function POST(){
+//     try{
 
-      const response = NextResponse.json({message:"Logout successfully",success:true})
+//       const response = NextResponse.json({message:"Logout successfully",success:true})
 
-        response.cookies.set("token","",{
-            httpOnly:true,
-            expires: new Date()
-        },)
-        return response
+//         response.cookies.set("token","",{
+//             httpOnly:true,
+//             expires: new Date()
+//         },)
+//         return response
 
-    }
-   catch(err){
-    return NextResponse.json({ err: "error" }, { status: 500 })
-   }
-}
+//     }
+//    catch(err){
+//     return NextResponse.json({ err: "error" }, { status: 500 })
+//    }
+// }
 
